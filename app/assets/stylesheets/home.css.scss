@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-textarea#chat_log {
-  width: 98%;
+div#chat_log {
+  height: 300px;
+  overflow: auto;
 }
 
 button#send_message {
