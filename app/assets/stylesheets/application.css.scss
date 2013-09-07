@@ -13,14 +13,14 @@
  */
 
 // Bootswatch theme variables
-@import "bootswatch/journal/variables";
+@import "bootswatch/flatly/variables";
 
 // Bootstrap itself
 @import "bootstrap";
 // @import "bootstrap-responsive";
 
 // Bootswatch theme
-@import "bootswatch/journal/bootswatch";
+@import "bootswatch/flatly/bootswatch";
 
 // Font-awesome scalable icons (loaded from font-awesome CDN)
 @import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);

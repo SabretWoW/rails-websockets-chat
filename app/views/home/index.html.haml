@@ -1,13 +1,15 @@
 .row-fluid
 	.span12
 		.well#chat_history
+			/ %textarea#chat_log{ :type => 'textarea', :value => '' }
+
 .row-fluid
 	.span12
-		%input#new_message{:type => 'text', :value => 'New message'}
-		%button#send_message Send Message
+		%input#new_message{ :type => 'text', :value => 'New message' }
+		%button#send_message{ :class => 'btn btn-primary' } Send Message
 
 .row-fluid
 	.span12
 		%h4 Set screen name
-		%input#screen_name{:type => 'text', :value => 'Anon'}
-		%button#set_name Submit!
+		%input#screen_name{ :type => 'text', :value => 'Anon' }
+		%button#set_name{ :class => 'btn btn-primary' } Submit!
