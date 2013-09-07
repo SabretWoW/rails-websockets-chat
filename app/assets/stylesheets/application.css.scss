@@ -9,5 +9,21 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require_tree
  */
+
+// Bootswatch theme variables
+@import "bootswatch/journal/variables";
+
+// Bootstrap itself
+@import "bootstrap";
+// @import "bootstrap-responsive";
+
+// Bootswatch theme
+@import "bootswatch/journal/bootswatch";
+
+// Font-awesome scalable icons (loaded from font-awesome CDN)
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+// Google Fonts fontset I downloaded
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
