@@ -1,9 +1,9 @@
 class ChatController < WebsocketRails::BaseController
 
 	def client_connected
-    rand = Random.rand(1000)
-    connection_store[:screen_name] = "Chatter #{rand}"
+    connection_store[:screen_name] = "Chatter #{Random.rand(1000)}"
     broadcast_message :new_message, {:user => "System", :text => "New user #{connection_store[:screen_name]} connected!" }
+    
   end
 
 	def send_message
