@@ -7,6 +7,11 @@ div#chat_log {
   overflow: auto;
 }
 
+div#user_listing_box {
+  height: 300px;
+  overflow: auto;
+}
+
 button#send_message {
   margin-top: -10px;
 }
