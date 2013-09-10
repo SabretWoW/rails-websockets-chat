@@ -13,5 +13,11 @@ Upcoming Features:
 - DRYing the `ChatController` with `observers` or `before_filters'.
 - RSpec tests for the Ruby, Jasmine specs for the JavaScript.
 - Requests?
+
+### [@kyletcarlson](https://twitter.com/kyletcarlson)
+
+
+![Ruby on Rails websockets chat](https://dl.dropboxusercontent.com/u/23045557/Rails-Websockets-Chat.png)
  
-[@kyletcarlson](https://twitter.com/kyletcarlson)
+
+
