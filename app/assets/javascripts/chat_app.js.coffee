@@ -9,21 +9,20 @@ $(document).ready ->
 	dispatcher.bind 'new_message', (data) =>
 	# any time the chat#new_message on the server gets triggered, fire the following code:
 
-		# add the chatter + message to the chat_log <div>. not sure why the fadeIn() method doesn't fire.
-		$('#chat_log')
-			.append("<div>" + data['user'] + ": " + data['text'] + "</div>").fadeIn()
+		# add the chatter + message to the chat_log <div>.
+		$("<div>" + data['user'] + ": " + data['text'] + "</div>").hide().appendTo("#chat_log").fadeIn(200);
 		# automagically scroll the chat_log down if the message would overflow.
 		$("#chat_log").animate
 			scrollTop:$("#chat_log")[0].scrollHeight - $("#chat_log").height()
-		# update the user count in the user list header. not sure why the fadeIn() method doesn't fire.
-		$('#user_count').html(data['user_count']).fadeIn(500)
+		# update the user count in the user list header. 
+		$('#user_count').html(data['user_count']).hide().fadeIn(500)
+
 
 		# to build the user list items
 		user_list_html = ""
 		for data in data['collected_users']
 			user_list_html += "<li>" + data + "</li>"
-		# always seem to have to call hide() before any kind of fadeIn() or other methods to help show DOM elements.
-		$('#user_list').hide().html(user_list_html).fadeIn(125)
+		$('#user_list').html(user_list_html)
 
 
 	$('#send_message').on 'click', =>
@@ -40,3 +39,5 @@ $(document).ready ->
 	$('#new_message').keypress (e) -> 
 	# 'click' the send_message button if they hit enter & the message isn't empty
 		$('#send_message').click() if (e.keyCode == 13 && $('#new_message').val().length > 0)
+		# put the cursor back into the new_message <div>
+		$('#new_message').focus()

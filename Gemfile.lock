@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/moaa/websocket-rails.git
-  revision: db6a7147be03929608a0997621a6fec93cc9697b
+  remote: git://github.com/DanKnox/websocket-rails.git
+  revision: c6cdb4e72099d3b92654c0fc31ddb897d4269ee6
   specs:
-    websocket-rails (0.4.9)
+    websocket-rails (0.6.2)
       em-synchrony
       faye-websocket
       hiredis
@@ -65,9 +65,9 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.1)
-    faye-websocket (0.6.3)
+    faye-websocket (0.7.0)
       eventmachine (>= 0.12.0)
-      websocket-driver (>= 0.2.0)
+      websocket-driver (>= 0.3.0)
     hike (1.2.3)
     hiredis (0.4.5)
     i18n (0.6.5)
@@ -144,7 +144,7 @@ GEM
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    websocket-driver (0.2.3)
+    websocket-driver (0.3.0)
 
 PLATFORMS
   ruby

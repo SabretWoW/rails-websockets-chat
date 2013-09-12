@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'therubyracer', platforms: :ruby
-gem 'websocket-rails', github: 'moaa/websocket-rails'
-# gem 'websocket-rails', git: 'git://github.com/DanKnox/websocket-rails.git'
+# gem 'websocket-rails', github: 'moaa/websocket-rails'
+gem 'websocket-rails', github: 'DanKnox/websocket-rails'
 # gem 'websocket-rails'
 
 
